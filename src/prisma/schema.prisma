@@ -15,11 +15,12 @@ datasource db {
 }
 
 model Profile {
-  id       String @id @default(uuid())
-  userId   String @unique
-  name     String
-  imageUrl String @db.Text
-  email    String @db.Text
+  id          String  @id @default(uuid())
+  userId      String  @unique
+  name        String
+  imageUrl    String  @db.Text
+  email       String? @db.Text
+  phoneNumber String?
 
   servers  Server[]
   members  Member[]
