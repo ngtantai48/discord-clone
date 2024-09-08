@@ -3,6 +3,5 @@ export default function Home() {
     <div>
       This is a protected route
     </div>
-
   );
 }
