@@ -11,7 +11,7 @@ import { DeleteChannelModal } from "@/components/modals/delete-channel-modal";
 import { useEffect, useState } from "react";
 import { EditChannelModal } from "@/components/modals/edit-channel-modal";
 
-export const Modalprovider = () => {
+export const ModalProvider = () => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
