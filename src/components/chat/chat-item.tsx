@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import * as z from "zod";
@@ -108,7 +109,7 @@ export const ChatItem = ({
         form.reset({
             content: content,
         })
-    }, [content]);
+    }, [content, form]);
 
 
     const fileType = fileUrl?.split(".").pop();
